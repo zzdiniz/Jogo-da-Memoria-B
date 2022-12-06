@@ -1,0 +1,269 @@
+.game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  width: 700px;
+  height: 1000px;
+  position: absolute;
+  top: 275px;
+  left: 400px;
+}
+
+#btnCharge{
+  text-decoration: none;
+  width: 300px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 20px;
+  top: 400px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: maroon;
+}
+
+#why {
+  position: absolute;
+  top: 2300px;
+  left: 200px;
+  width: 1000px;
+}
+
+h1, h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+#why>h3 {
+  line-height: 55px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+#why>p {
+  line-height: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.box {
+  border-radius: 4px;
+  width: 150px;
+  height: 150px;
+  background: #8c8c8c;
+  margin: 1rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  visibility: hidden;
+}
+
+#return {
+  width: 300px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 1490px;
+  top: 1825px;
+  padding: 5px;
+}
+
+#peaces {
+  width: 300px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 420px;
+  top: 1900px;
+  padding: 5px;
+}
+
+#ranking-btn {
+  text-decoration: none;
+  width: 300px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 420px;
+  top: 1825px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#alterate_btn {
+  text-decoration: none;
+  width: 300px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 1490px;
+  top: 1900px;
+  padding: 5px;
+}
+
+#alterate_btn:hover {
+  color: cornsilk;
+  background: #5c0202;
+}
+
+#ranking-btn:hover {
+  color: cornsilk;
+  background: #5c0202;
+}
+
+#peaces:hover {
+  color: cornsilk;
+  background: #5c0202;
+
+}
+
+#return:hover {
+  color: cornsilk;
+  background: #5c0202;
+}
+
+#back_time:hover{
+  color: cornsilk;
+  background: #5c0202;
+}
+
+#classic:hover{
+  color: cornsilk;
+  background: #5c0202;
+}
+
+#mode_game {
+  position: absolute;
+  left: 250px;
+  top: 100px;
+}
+
+#classic {
+  text-decoration: none;
+  width: 300px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 1490px;
+  top: 200px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#back_time {
+  text-decoration: none;
+  width: 300px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 420px;
+  top: 200px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#score{
+  font-size: 1.5rem;
+  text-align: center;
+  color: cornsilk;
+}
+h1{
+  text-align: center;
+  margin-top: 50px;
+}
+
+h2{
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 50px;
+}

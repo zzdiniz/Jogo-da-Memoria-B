@@ -1,0 +1,95 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:maroon;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+main {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color:cornsilk;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span {
+    margin-top: 2rem;
+}
+
+main form input {
+    background:#5c0202;
+    width: 300px;
+    height: 50px;
+    padding: 0;
+    margin-top: 1rem;
+    outline: none;
+    color:white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+main form input[type="submit"] {
+    width: 50%;
+    margin-top: 3rem;
+    border-radius: 5px;
+    background: cornsilk;
+    color: black;
+    font-size: 1rem;
+}
+
+main form input[type="submit"]:hover {
+    background: #5c0202;
+    color:white;
+    border:1px solid black;
+}
+
+.ancora{
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: cornsilk;
+    padding: 5px;
+    margin-top: 3rem;
+    width: 300px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ancora:hover{
+    color: cornsilk;
+    background: #5c0202;
+}

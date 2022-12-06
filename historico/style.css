@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: brown;
+}
+
+#title {
+  text-align: center;
+  color: white;
+}
+
+#title_jogador {
+  text-align: center;
+  color: white;
+}
+
+#coloumn_name {
+  position: absolute;
+  width: 1250px;
+  left: 150px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  color: white;
+}
+
+.tabela_info {
+  position: absolute;
+  top: 200px;
+  width: 1250px;
+  left: 150px;
+  background-color: antiquewhite;
+}
+
+td{
+  text-align: center;
+}
+
+th{
+  background-color: dimgray;
+}

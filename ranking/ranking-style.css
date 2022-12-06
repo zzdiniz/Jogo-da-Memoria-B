@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 0;
+    border: 0;
+    background-color: maroon;
+    color: white;
+    min-width: 691px;
+}
+#ranking-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+hr {
+    margin: 2vh 0;
+}
+ol {
+    list-style: none;
+}
+li{
+    counter-increment: item;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+#table-label {
+    margin: 0;
+}
+li, #table-label {
+    background-color: rgba(250, 235, 215, 0.336);
+    padding: .5vh 1vw;
+    padding-right: 5vw;
+    margin: 1vh 2vw;
+    border-radius: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li:before {
+    content: counter(item);
+    margin-right: 1vw;
+    background-color: lightblue;
+    color: black;
+    padding: .5vh;
+    width: 1.1em;
+    border-radius: 100%;
+    text-align: center;
+    margin-left: 1vw;
+}
+.username, .board-size, .spent-time, .date, .hour {
+    width: 60px;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.ancora{
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: cornsilk;
+    padding: 5px;
+    margin-top: 3rem;
+    width: 300px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ancora:hover{
+    color: cornsilk;
+    background: #5c0202;
+}
