@@ -68,8 +68,7 @@
                 echo $e->getMessage();
             }
             echo"</ol>";
-        ?>
-        <script>alert("rola")</script>       
+        ?> 
     </div>
 </body>
 </html>
