@@ -6,7 +6,6 @@
   }
   $name = $_SESSION['username'];
   echo "<script>alert(\"Bem vindo de volta \"+\"$name\"+\"!\")</script>";
-  session_destroy();
 ?>
 
 <!DOCTYPE html>
