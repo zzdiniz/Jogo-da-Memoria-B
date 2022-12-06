@@ -28,6 +28,7 @@ let xhttp;
                 let result = JSON.parse(xhttp.responseText);
                 console.log(result);
                 alert("Cadastro bem sucedido!");
+                redirect(result);
             }
             else {
                 alert('Um problema ocorreu.');
@@ -36,5 +37,15 @@ let xhttp;
     } 
     catch (e) {
         alert("Ocorreu uma exceção: " + e.description);
+    }
+}
+
+function redirect(result){
+    if(result!=false){
+        console.log("Login bem sucedido!");
+        window.location.href="../login/telaLogin.php";
+    }
+    else if(result==false){
+        alert("Usuario/Senha invalidos!");
     }
 }

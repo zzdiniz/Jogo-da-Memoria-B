@@ -571,3 +571,25 @@ h2{
   top: 275px;
   left: 200px;
 }
+#disconnect {
+  width: 150px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 420px;
+  top: 1100px;
+  padding: 5px;
+}
+
+#disconnect:hover {
+  color: cornsilk;
+  background: #5c0202;
+}

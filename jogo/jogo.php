@@ -5,7 +5,7 @@
     echo "<script>window.location.href=\"../login/telaLogin.php\";</script>";
   }
   $name = $_SESSION['username'];
-  echo "<script>alert(\"Bem vindo devolta \"+\"$name\"+\"!\")</script>";
+  echo "<script>alert(\"Bem vindo de volta \"+\"$name\"+\"!\")</script>";
   session_destroy();
 ?>
 
@@ -17,6 +17,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="ajax.js" defer></script>
   <script src="script.js" defer></script>
   <title>Jogo da Memória</title>
 </head>
@@ -34,6 +35,7 @@
   <div id="btn-section">
     <input type="submit" id="peaces" value="Mostrar Peças">
     <input type="submit" id="return" value="Reiniciar" onclick="f5()">
+    <input type="button" id="disconnect" value="Desconectar" onclick="enviarDados()">
     <a id="alterate_btn" href="../altera_dados/alterate-data.php">Alterar dados
     </a>
     <a id="ranking-btn" href="../ranking/ranking.php">Ranking
