@@ -1,4 +1,4 @@
-.game {
+#game {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -6,12 +6,12 @@
   height: 1000px;
   position: absolute;
   top: 275px;
-  left: 400px;
+  left: 550px;
 }
 
 #btnCharge{
   text-decoration: none;
-  width: 300px;
+  width: 150px;
   height: 50px;
   font-style: normal;
   font-weight: 600;
@@ -90,8 +90,11 @@ img {
   visibility: hidden;
 }
 
+
+
+
 #return {
-  width: 300px;
+  width: 150px;
   height: 50px;
   font-weight: 600;
   font-size: 16px;
@@ -103,13 +106,13 @@ img {
   margin-bottom: 20px;
   border: 1px solid black;
   position: absolute;
-  left: 1490px;
-  top: 1825px;
+  left: 1200px;
+  top: 1100px;
   padding: 5px;
 }
 
 #peaces {
-  width: 300px;
+  width: 150px;
   height: 50px;
   font-weight: 600;
   font-size: 16px;
@@ -122,13 +125,13 @@ img {
   border: 1px solid black;
   position: absolute;
   left: 420px;
-  top: 1900px;
+  top: 1100px;
   padding: 5px;
 }
 
 #ranking-btn {
   text-decoration: none;
-  width: 300px;
+  width: 150px;
   height: 50px;
   font-style: normal;
   font-weight: 600;
@@ -142,7 +145,7 @@ img {
   border: 1px solid black;
   position: absolute;
   left: 420px;
-  top: 1825px;
+  top: 1000px;
   padding: 5px;
   display: flex;
   justify-content: center;
@@ -151,7 +154,7 @@ img {
 
 #alterate_btn {
   text-decoration: none;
-  width: 300px;
+  width: 150px;
   height: 50px;
   font-style: normal;
   font-weight: 600;
@@ -164,11 +167,10 @@ img {
   margin-bottom: 20px;
   border: 1px solid black;
   position: absolute;
-  left: 1490px;
-  top: 1900px;
+  left: 1200px;
+  top: 1000px;
   padding: 5px;
 }
-
 #alterate_btn:hover {
   color: cornsilk;
   background: #5c0202;
@@ -208,7 +210,7 @@ img {
 
 #classic {
   text-decoration: none;
-  width: 300px;
+  width: 150px;
   height: 50px;
   font-style: normal;
   font-weight: 600;
@@ -221,7 +223,7 @@ img {
   margin-bottom: 20px;
   border: 1px solid black;
   position: absolute;
-  left: 1490px;
+  left: 1200px;
   top: 200px;
   padding: 5px;
   display: flex;
@@ -231,7 +233,7 @@ img {
 
 #back_time {
   text-decoration: none;
-  width: 300px;
+  width: 150px;
   height: 50px;
   font-style: normal;
   font-weight: 600;
@@ -266,4 +268,306 @@ h2{
   text-align: center;
   margin-top: 50px;
   margin-left: 50px;
+}
+
+/*Muda a posição dos botões*/
+
+
+/*4x4*/
+
+#peaces_4x4 {
+  width: 150px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 420px;
+  top: 1250px;
+  padding: 5px;
+}
+
+#ranking-btn_4x4 {
+  text-decoration: none;
+  width: 150px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 420px;
+  top: 1350px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#return_4x4 {
+  width: 150px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 1200px;
+  top: 1350px;
+  padding: 5px;
+}
+
+#alterate_btn_4x4 {
+  text-decoration: none;
+  width: 150px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 1200px;
+  top: 1250px;
+  padding: 5px;
+}
+
+/*6x6*/
+
+#classic_6x6 {
+  text-decoration: none;
+  width: 150px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 1200px;
+  top: 200px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#peaces_6x6 {
+  width: 150px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 420px;
+  top: 1500px;
+  padding: 5px;
+}
+
+#ranking-btn_6x6 {
+  text-decoration: none;
+  width: 150px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 420px;
+  top: 1400px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#return_6x6 {
+  width: 150px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 1200px;
+  top: 1500px;
+  padding: 5px;
+}
+
+#alterate_btn_6x6 {
+  text-decoration: none;
+  width: 150px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 1200px;
+  top: 1400px;
+  padding: 5px;
+}
+
+/*8x8*/
+
+
+#peaces_8x8 {
+  width: 150px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 420px;
+  top: 1900px;
+  padding: 5px;
+}
+
+#ranking-btn_8x8 {
+  text-decoration: none;
+  width: 150px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 420px;
+  top: 1800px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#return_8x8 {
+  width: 150px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 1200px;
+  top: 1900px;
+  padding: 5px;
+}
+
+#alterate_btn_8x8 {
+  text-decoration: none;
+  width: 150px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 1200px;
+  top: 1800px;
+  padding: 5px;
+}
+
+#game_4x4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  width: 700px;
+  height: 1000px;
+  position: absolute;
+  top: 275px;
+  left: 500px;
+}
+
+#game_6x6{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  width: 700px;
+  height: 1000px;
+  position: absolute;
+  top: 275px;
+  left: 350px;
+}
+
+#game_8x8{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  width: 700px;
+  height: 1000px;
+  position: absolute;
+  top: 275px;
+  left: 200px;
 }

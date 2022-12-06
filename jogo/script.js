@@ -253,6 +253,7 @@ function verifyMode(id){
         setTimerContraTempo();
         document.getElementById("back_time").setAttribute("onclick","");//desabilita botes de modo de jogo(impede que clique vairas vezes)
         document.getElementById("classic").setAttribute("onclick","");
+        document.getElementById("btnCharge").setAttribute("onclick","");
         return 1;
     }
     else if(id=="classic"){
@@ -260,6 +261,7 @@ function verifyMode(id){
         setTimerClassico();
         document.getElementById("back_time").setAttribute("onclick","");
         document.getElementById("classic").setAttribute("onclick","");
+        document.getElementById("btnCharge").setAttribute("onclick","");
         return 1;
     }
     else{
@@ -332,4 +334,34 @@ function selecionar() {
 
     }
     console.log(boardSize);
+}
+
+function buttonPosition(){
+    selecionar();
+    switch (boardSize) {
+        case 16:
+            document.getElementById("game").id = "game_4x4"
+            document.getElementById("return").id= "return_4x4";
+            document.getElementById("peaces").id = "peaces_4x4";
+            document.getElementById("ranking-btn").id = "ranking-btn_4x4";
+            document.getElementById("alterate_btn").id = "alterate_btn_4x4";
+            return selecionar();
+    
+        case 36:
+            document.getElementById("game").id = "game_6x6"
+            document.getElementById("classic").id = "classic_6x6";
+            document.getElementById("return").id= "return_6x6";
+            document.getElementById("peaces").id = "peaces_6x6";
+            document.getElementById("ranking-btn").id = "ranking-btn_6x6";
+            document.getElementById("alterate_btn").id = "alterate_btn_6x6";
+            return selecionar();
+        case 64:
+            document.getElementById("game").id = "game_8x8"
+            document.getElementById("classic").id = "classic_6x6";
+            document.getElementById("return").id= "return_8x8";
+            document.getElementById("peaces").id = "peaces_8x8";
+            document.getElementById("ranking-btn").id = "ranking-btn_8x8";
+            document.getElementById("alterate_btn").id = "alterate_btn_8x8";
+            return selecionar();
+    }
 }

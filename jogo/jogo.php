@@ -39,7 +39,7 @@
     <a id="ranking-btn" href="../ranking/ranking.php">Ranking
     </a>
   </div>
-  <select name="Tamanho do tabuleiro" id="btnCharge" onclick="selecionar()">
+  <select name="Tamanho do tabuleiro" id="btnCharge" onclick="buttonPosition()">
     <option>Selecione</option>
     <option value="4">2x2</option>
     <option value="16">4x4</option>
