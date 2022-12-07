@@ -152,6 +152,28 @@ img {
   align-items: center;
 }
 
+#historico-btn {
+  width: 150px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  background-color: cornsilk;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: absolute;
+  left: 420px;
+  top: 1200px;
+  padding: 5px;
+}
+#historico-btn:hover {
+  color: cornsilk;
+  background: #5c0202;
+}
+
 #alterate_btn {
   text-decoration: none;
   width: 150px;

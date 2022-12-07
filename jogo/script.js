@@ -74,6 +74,8 @@ let cards8 = [
 let section = window.document.getElementById("game");
 let boxes = [];
 let boardSize;
+let modoDeJogo;
+let initialTime;
 
 // Embaralha o array de cartas
 function shuffleArray(cards) {//embaralha o array
@@ -236,8 +238,9 @@ function checkEnd(){
             resetTable();
             score++;
             document.getElementById("score").innerHTML="Partidas jogadas: "+score;
-            countContraTempo = -1;
             win = true;
+            conexaoPHP(0);
+            countContraTempo = -1;
             document.getElementById("back_time").setAttribute("onclick","verifyMode(this.id)");
             document.getElementById("classic").setAttribute("onclick","verifyMode(this.id)");
             attempts=0;
@@ -249,19 +252,22 @@ let countContraTempo;
 function verifyMode(id){
     generateBoard()
     if(id=="back_time"){
+        modoDeJogo = -1;
         countContraTempo = 500 * tamanhoTab;
-        setTimerContraTempo();
+        initialTime = countContraTempo;
         document.getElementById("back_time").setAttribute("onclick","");//desabilita botes de modo de jogo(impede que clique vairas vezes)
         document.getElementById("classic").setAttribute("onclick","");
         document.getElementById("btnCharge").setAttribute("onclick","");
+        setTimerContraTempo();
         return 1;
     }
     else if(id=="classic"){
+        modoDeJogo = 1;
         countClassico = 0;
-        setTimerClassico();
         document.getElementById("back_time").setAttribute("onclick","");
         document.getElementById("classic").setAttribute("onclick","");
         document.getElementById("btnCharge").setAttribute("onclick","");
+        setTimerClassico();
         return 1;
     }
     else{

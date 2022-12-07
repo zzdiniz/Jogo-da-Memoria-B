@@ -52,7 +52,7 @@
                 $sql="select u.username,p.dimensoes,p.tempogasto,p.data,p.pontuacao
                 from Usuario u inner join Partida p on u.username=p.username order by (pontuacao)";
                 $stmt=$conn->query($sql);
-                $conn=null;
+                
                 
                 while($row = $stmt->fetch(PDO::FETCH_ASSOC)){//obtem a proxima linha
                     echo"   <li>";
@@ -63,6 +63,16 @@
                     echo"       <div class=\"hour\">".$row["pontuacao"]."</div>";
                     echo"   </li>";
                 }
+                ////////////////
+                $sql="select * from Partida";
+                $stmt=$conn->query($sql);
+                $count=count($stmt->fetchAll());
+                echo "<script>alert(".$count.")</script>";
+                $count++;
+                $sql="insert into Partida (codPartida) values (".$count.")";
+                $conn->exec($sql);
+                $conn=null;
+                ///////
             }
             catch(PDOException $e){
                 echo $e->getMessage();

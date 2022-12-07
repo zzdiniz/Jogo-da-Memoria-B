@@ -1,5 +1,7 @@
 <?php
   session_start();
+  $username = $_SESSION['username'];
+  echo "<script> var username = '$username' </script>";
   if(!isset($_SESSION['username'])){
     echo "<script>alert(\"Usuario não logado, favor relizar login para acessar as demais paginas\");</script>";
     echo "<script>window.location.href=\"../login/telaLogin.php\";</script>";
@@ -18,48 +20,49 @@
 
 <body>
   <h1 id="title">Histórico</h1>
-  <h2 id="title_jogador">Histórico do {Jogador}</h2>
+  <h2 id="title_jogador"></h2>
 
   <table class="tabela_info">
     <tr>
-      <th>Numero de partidas</th>
+      <th>Nome do Jogador</th>
       <th>Dimensões do tabuleiro</th>
       <th>Modalidade da partida</th>
       <th>Tempo gasto</th>
       <th>Resultado</th>
       <th>Data/Hora</th>
     </tr>
-    <tr>
-      <td>Partida 543</td>
-      <td>4x4</td>
-      <td>Aguma aí</td>
-      <td>10</td>
-      <td>Vencedor</td>
-      <td>10/10/2022
-        17:35
-      </td>
-    </tr>
-    <tr>
-      <td>Partida 543</td>
-      <td>4x4</td>
-      <td>Aguma aí</td>
-      <td>10</td>
-      <td>Vencedor</td>
-      <td>10/10/2022
-        17:35
-      </td>
-    </tr>
-    <tr>
-      <td>Partida 543</td>
-      <td>4x4</td>
-      <td>Aguma aí</td>
-      <td>10</td>
-      <td>Vencedor</td>
-      <td>10/10/2022
-        17:35
-      </td>
-    </tr>
+    <?php
+      try{
+          $conn = new PDO("mysql:host=localhost;dbname=jogo_da_memoria", "root", "");
+          $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+          $sql="select u.username,p.dimensoes,p.modalidade,p.tempogasto,p.resultado,p.data
+          from Usuario u inner join Partida p on u.username=p.username
+          where u.username = \"$username\"";
+          $stmt=$conn->query($sql);
+          $conn=null;
+          
+          while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+              echo"   <tr>";
+              echo"       <th class=\"username\">".$row["username"]."</th>";
+              echo"       <th class=\"board-size\">".$row["dimensoes"]."</th>";
+              echo"       <th class=\"modality\">".$row["modalidade"]."</th>";
+              echo"       <th class=\"spent-time\">".$row["tempoGasto"]."</th>";
+              echo"       <th class=\"result\">".$row["resultado"]."</th>";
+              echo"       <th class=\"date\">".$row["data"]."</th>";
+              echo"   </tr>";
+          }
+      }
+      catch(PDOException $e){
+          echo $e->getMessage();
+      }
+    ?>
   </table>
+
+  <script defer>
+    let jogador = window.document.querySelector("#title_jogador");
+    jogador.innerText = `Histórico do jogador ${username}`;
+
+  </script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
   }
   $name = $_SESSION['username'];
   echo "<script>alert(\"Bem vindo de volta \"+\"$name\"+\"!\")</script>";
-  session_destroy();
+  echo "<script> var username = \"$_SESSION[username]\"; </script>";
 ?>
 
 <!DOCTYPE html>
@@ -35,10 +35,13 @@
   <div id="btn-section">
     <input type="submit" id="peaces" value="Mostrar Peças">
     <input type="submit" id="return" value="Reiniciar" onclick="f5()">
-    <input type="button" id="disconnect" value="Desconectar" onclick="enviarDados()">
+    <input type="button" id="disconnect" value="Desconectar" onclick="conexaoPHP(1)">
     <a id="alterate_btn" href="../altera_dados/alterate-data.php">Alterar dados
     </a>
     <a id="ranking-btn" href="../ranking/ranking.php">Ranking
+    </a>
+    </a>
+    <a id="historico-btn" href="../historico/index.php">Historico
     </a>
   </div>
   <select name="Tamanho do tabuleiro" id="btnCharge" onclick="buttonPosition()">
