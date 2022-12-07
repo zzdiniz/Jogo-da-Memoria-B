@@ -31,6 +31,9 @@ insert into Partida values(2,12,"4x4","Classico","00:10:37",true,"2022-11-09","Q
 insert into Partida values(3,25,"6x6","Contra Tempo","00:7:59",true,"2022-12-04","Cavotron")
 insert into Partida values(4,4,"2x2","Classico","00:7:59",true,"2022-12-02","Grafite")
 
+insert into Partida values(18,30,"4x4","Classico","00:10:32",true,"2022-11-09","Cavotron");
+insert into Partida values(12,18,"2x2","Contra Tempo","00:8:26",true,"2022-10-06","Cavotron");
+
 /*Consultas*/
 /*Ranking*/
 select u.username,p.dimensoes,p.tempogasto,p.data,p.pontuacao

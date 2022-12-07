@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alterate Data Form</title>
     <link rel="stylesheet" type="text/css" href="edadostyle.css">
+    <script src="ajax.js" defer></script>
 </head>
 <body>
     <main>
@@ -23,13 +24,17 @@
             </label>
             <label for="phone">
                 <span>Telefone</span>
-                <input type="tel" id="phone" name="phone">
+                <input type="text" id="phone" name="phone">
             </label>
             <label for="email">
                 <span>E-mail</span>
                 <input type="email" id="email" name="email">
             </label>
-            <a href="../jogo/jogo.php" class="ancora"><span>Enviar</span></a>
+            <label for="senha">
+                <span>Senha</span>
+                <input type="password" id="senha" name="senha">
+            </label>
+            <a href="../jogo/jogo.php" class="ancora" onclick="enviarDados()"><span>Enviar</span></a>
         </form>
     </main>
 </body>
