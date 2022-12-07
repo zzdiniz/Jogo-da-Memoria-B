@@ -39,6 +39,8 @@
     </a>
     <a id="ranking-btn" href="../ranking/ranking.php">Ranking
     </a>
+    <a id="historico-btn" href="../historico/index.php">Historico
+    </a>
   </div>
   <select name="Tamanho do tabuleiro" id="btnCharge" onclick="buttonPosition()">
     <option>Selecione</option>

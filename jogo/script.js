@@ -340,7 +340,10 @@ function buttonPosition(){
     selecionar();
     switch (boardSize) {
         case 16:
-            document.getElementById("game").id = "game_4x4"
+            document.getElementById("why").id = "why_4x4";
+            document.getElementById("historico-btn").id = "historico-btn_4x4";
+            document.getElementById("disconnect").id = "disconnect_4x4";
+            document.getElementById("game").id = "game_4x4";
             document.getElementById("return").id= "return_4x4";
             document.getElementById("peaces").id = "peaces_4x4";
             document.getElementById("ranking-btn").id = "ranking-btn_4x4";
@@ -348,16 +351,20 @@ function buttonPosition(){
             return selecionar();
     
         case 36:
-            document.getElementById("game").id = "game_6x6"
-            document.getElementById("classic").id = "classic_6x6";
+            document.getElementById("why").id = "why_6x6";
+            document.getElementById("historico-btn").id = "historico-btn_6x6";
+            document.getElementById("disconnect").id = "disconnect_6x6";
+            document.getElementById("game").id = "game_6x6";
             document.getElementById("return").id= "return_6x6";
             document.getElementById("peaces").id = "peaces_6x6";
             document.getElementById("ranking-btn").id = "ranking-btn_6x6";
             document.getElementById("alterate_btn").id = "alterate_btn_6x6";
             return selecionar();
         case 64:
-            document.getElementById("game").id = "game_8x8"
-            document.getElementById("classic").id = "classic_6x6";
+            document.getElementById("why").id = "why_8x8";
+            document.getElementById("historico-btn").id = "historico-btn_8x8";
+            document.getElementById("disconnect").id = "disconnect_8x8";
+            document.getElementById("game").id = "game_8x8";
             document.getElementById("return").id= "return_8x8";
             document.getElementById("peaces").id = "peaces_8x8";
             document.getElementById("ranking-btn").id = "ranking-btn_8x8";
